@@ -1,0 +1,53 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.14.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.2.1",
+    "@unocss/nuxt": "^0.48.0",
+    "@unocss/preset-attributify": "^0.48.0",
+    "@unocss/preset-icons": "^0.48.0",
+    "@unocss/preset-uno": "^0.48.0",
+    "nuxt": "3.0.0",
+    "unocss": "^0.48.0"
+  },
+  "dependencies": {
+    "@css-render/vue3-ssr": "^0.15.12",
+    "@jridgewell/sourcemap-codec": "^1.4.14",
+    "@juggle/resize-observer": "^3.4.0",
+    "@nuxt/content": "^2.3.0",
+    "@nuxtjs/i18n": "^7.3.0",
+    "@unocss/webpack": "^0.48.0",
+    "naive-ui": "^2.34.3",
+    "rollup": "2.79.1",
+    "vite": "4.0.0",
+    "vue": "^3.2.45",
+    "webpack": "5"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "vite",
+        "webpack",
+        "typescript"
+      ]
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji-chinese"
+    },
+    "cz-emoji-chinese": {
+      "skipQuestions": [
+        "body",
+        "scope"
+      ]
+    }
+  }
+}
