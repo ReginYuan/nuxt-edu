@@ -1,8 +1,10 @@
 <template>
-  <NuxtPage />
+  <NConfigProvider inline-theme-disabled>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </NConfigProvider>
 </template>
-<script setup lang="ts">
-import { NButton } from "naive-ui";
+<script setup>
+import { NConfigProvider } from "naive-ui";
 </script>
-<style>
-</style>
