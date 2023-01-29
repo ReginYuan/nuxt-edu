@@ -3,7 +3,8 @@ import {
   presetAttributify,
   presetIcons,
   presetUno,
-} from 'unocss'
+  transformerDirectives,
+} from "unocss";
 
 // @unocss-include
 
@@ -19,4 +20,5 @@ export default defineConfig({
       scale: 1.2,
     }),
   ],
-})
+  transformers: [transformerDirectives()],
+});
