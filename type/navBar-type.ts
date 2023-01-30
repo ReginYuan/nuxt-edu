@@ -1,11 +1,13 @@
 export interface userOptionsType {
-  label: string;
-  key: string;
+	label: string
+	key: string
 }
 
-
-
-export  interface menuType {
-  name:string,
-  path: string
+export interface matchType {
+	name: string
+}
+export interface menuType {
+	name: string
+	path: string
+	[match: number]: matchType
 }

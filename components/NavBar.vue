@@ -2,11 +2,12 @@
   <div class="navbar">
     <div class="container flex items-center h-[60px]">
       <n-button text class="text-xl font-bold">米谷教育</n-button>
-      <div class="menu">
-        <div class="menu-item" v-for="(item, index) in menus" :key="index"
-          :class="{ 'menu-item-active': (route.path === item.path) }" @click="handleOpen(item.path)">{{ item.name }}
-        </div>
-      </div>
+      <ui-menu>
+        <ui-menu-item v-for="(item, index) in menus" :key="index" :active="(route.path === item.path)"
+          @click="handleOpen(item.path)">
+          {{ item.name }}
+        </ui-menu-item>
+      </ui-menu>
       <n-button circle class="ml-auto mr-5">
         <template #icon>
           <n-icon>
@@ -48,14 +49,15 @@ const userOptions = ref<userOptionsType[]>([
   }
 ])
 
+
 const menus = ref<menuType[]>([
   {
     name: '首页',
-    path: '/'
+    path: '/',
   },
   {
     name: '考试',
-    path: '/paper/1'
+    path: '/paper/1',
   },
   {
     name: '拼团',
@@ -87,27 +89,15 @@ const menus = ref<menuType[]>([
   }
 ])
 
+
 const handleOpen = (path: string) => {
   navigateTo(path)
 }
 </script>
 
-<style >
+<style>
 .navbar {
   z-index: 1000;
   @apply bg-white fixed top-0 left-0 right-0 shadow-sm;
-}
-
-.menu {
-  @apply flex items-center px-5;
-}
-
-.menu-item {
-  transition: all 0.2s;
-  @apply px-2 py-1 mx-1 rounded cursor-pointer active: ( !bg-blue-100) hover:(bg-blue-50 text-blue-700);
-}
-
-.menu-item-active {
-  @apply !bg-blue-100 !text-blue-600;
 }
 </style>
