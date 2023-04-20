@@ -6,8 +6,9 @@ export interface userOptionsType {
 export interface matchType {
 	name: string
 }
+
 export interface menuType {
 	name: string
 	path: string
-	[match: number]: matchType
+	match: any
 }

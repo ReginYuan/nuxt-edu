@@ -58,6 +58,12 @@ const menus = ref<menuType[]>([
   {
     name: '考试',
     path: '/paper/1',
+    match:[
+      {
+        name:'paper-page'
+      }
+    ]
+    
   },
   {
     name: '拼团',
