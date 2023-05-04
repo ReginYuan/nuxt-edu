@@ -24,6 +24,7 @@
     "npm": "^9.4.0",
     "nuxt": "3.0.0",
     "prettier": "^2.8.3",
+    "sass": "^1.62.1",
     "stylelint": "^14.16.1",
     "stylelint-config-standard": "^29.0.0",
     "unocss": "^0.48.0"

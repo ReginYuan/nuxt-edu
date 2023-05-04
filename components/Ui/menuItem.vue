@@ -3,7 +3,7 @@
     <slot/>
   </div>
 </template>
-<script setup>
+<script setup>  
 // 接受父组件传来的值
 defineProps({
   active: {
