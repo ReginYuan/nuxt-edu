@@ -1,3 +1,6 @@
+/**
+ * 全局动态加载条
+ */
 import {
   createDiscreteApi
 } from "naive-ui";
