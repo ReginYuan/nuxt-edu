@@ -1,9 +1,10 @@
 <template>
 	<div class="navbar">
 		<div class="container flex items-center h-[60px]">
-			<n-button text class="text-xl font-bold">米谷教育</n-button>
+			<n-button text class="text-xl font-bold">程序员社区</n-button>
 			<ui-menu>
-				<ui-menu-item v-for="(item, index) in menus" :key="index" :active="isMenuItemActive(item)" @click="handleOpen(item.path)">
+				<ui-menu-item v-for="(item, index) in menus" :key="index" :active="isMenuItemActive(item)"
+					@click="handleOpen(item.path)">
 					{{ item.name }}
 				</ui-menu-item>
 			</ui-menu>
